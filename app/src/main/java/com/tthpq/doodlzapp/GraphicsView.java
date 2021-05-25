@@ -12,8 +12,8 @@ import android.view.View;
 public class GraphicsView extends View {
     int x = 0;
     int y = 0;
-    int d = 100;
-    int r = 50;
+    int d = 500;
+    int r = 500;
 
     public GraphicsView(Context context) {
         super(context);
@@ -37,7 +37,7 @@ public class GraphicsView extends View {
             Rect r = new Rect(x, y, right, bottom);
             Paint paint = new Paint();
             paint.setStyle(Paint.Style.FILL);
-            paint.setColor(Color.RED);
+            paint.setColor(Color.BLUE);
             canvas.drawRect(r, paint);
         }
 
